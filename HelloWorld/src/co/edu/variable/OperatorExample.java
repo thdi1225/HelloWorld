@@ -66,44 +66,6 @@ public class OperatorExample {
 			System.out.println("백원권 : " + 0);
 		}else {
 			System.out.println("백원권 : " + num11);
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		int a = 1;
-		
-		if(a == 2) {
-			System.out.println("111111111111");
-		}else {
-			
-		}
-		
-		
-		
-		
-		
-		
-		
-		
+		}		
 	}
 }
