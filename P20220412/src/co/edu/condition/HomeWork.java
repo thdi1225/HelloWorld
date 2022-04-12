@@ -2,7 +2,7 @@ package co.edu.condition;
 
 import java.util.Scanner;
 
-public class DiceExample {
+public class HomeWork {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		int randomVal = (int) (Math.random() * 6) + 1;
@@ -13,6 +13,7 @@ public class DiceExample {
 			System.out.println("맞췄습니다.");
 		}else {
 			System.out.println("틀렸습니다.");
+			System.out.println(randomVal + "입니다.");
 		}
 		
 		System.out.println("------------------------------------------------------");
@@ -24,6 +25,13 @@ public class DiceExample {
 			System.out.println("이겼습니다.");
 		}else {
 			System.out.println("졌습니다.");
+			if(randomVal1 == 1) {
+				System.out.println("가위였습니다.");
+			}else if(randomVal1 == 2) {
+				System.out.println("바위였습니다.");
+			}else if(randomVal1 == 3) {
+				System.out.println("보였습니다.");
+			}
 		}
 	}
 }
