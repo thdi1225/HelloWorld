@@ -24,8 +24,6 @@ public class HomeWork1 {
 			}else {
 				System.out.println("5개 상자 : " + (num3+1));
 			}
-			
 		}
-		
 	}
 }
