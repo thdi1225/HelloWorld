@@ -18,7 +18,7 @@ public class StudentExample2 {
 		students[0].studName = scn.next();
 		students[0].score = Integer.parseInt(scn.next());
 		students[0].age = Integer.parseInt(scn.next());
-		
+				
 		System.out.println("조회하고 싶은 이름 입력");
 		System.out.println("해당 이름 홍길동이고 20이고 80점입니다.");
 	}
