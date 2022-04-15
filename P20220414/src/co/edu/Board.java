@@ -1,6 +1,6 @@
 package co.edu;
 
-public class Board {
+public class Board extends Object{
 	private int boardNo;
 	private String boardTitle;
 	private String boardContent;
@@ -50,4 +50,12 @@ public class Board {
 		System.out.printf("%5d %9s %7s %6s %6d \n", this.boardNo, this.boardTitle, this.boardContent, this.boardWriter, this.boardCnt);
 //		System.out.println(this.boardNo, this.boardTitle, this,boardContent, this.boardWriter, this.boardCnt);
 	}
+
+	@Override
+	public String toString() {
+		return "Board [boardNo=" + boardNo + ", boardTitle=" + boardTitle + ", boardContent=" + boardContent
+				+ ", boardWriter=" + boardWriter + ", boardCnt=" + boardCnt + "]";
+	}
+	
+	
 }

@@ -22,12 +22,6 @@ public class BoardList {
 				break;
 			}
 		}
-//		for(Board vo : boards) {
-//			if(vo == null) {
-//				vo = board;
-//				break;
-//			}
-//		}
 		return errorCase;
 	}
 	
@@ -68,7 +62,7 @@ public class BoardList {
 	
 	public Board boardSelect(int boardNo) {
 		for(Board vo : boards) {
-			if(vo.getBoardNo() == boardNo) {
+			if(vo != null && vo.getBoardNo() == boardNo) {
 				return vo;
 			}
 		}
