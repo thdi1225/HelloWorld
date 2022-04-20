@@ -53,11 +53,7 @@ public class Game {
 						System.out.print("[" + problem[l] + "]");
 					}
 				}else {
-//					for(int b : nums) {
-						System.out.print("[*]");	
-//					}
-						
-					
+					System.out.print("[*]");
 				}
 			}
 			System.out.println("");
