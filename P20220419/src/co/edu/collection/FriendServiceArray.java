@@ -1,5 +1,7 @@
 package co.edu.collection;
 
+import java.util.ArrayList;
+
 public class FriendServiceArray implements FriendService{
 
 	Friend[] friends = new Friend[10];
@@ -41,6 +43,12 @@ public class FriendServiceArray implements FriendService{
 				return friends[i];
 			}
 		}
+		return null;
+	}
+
+	@Override
+	public ArrayList<Friend> findGender(Gender gender) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 

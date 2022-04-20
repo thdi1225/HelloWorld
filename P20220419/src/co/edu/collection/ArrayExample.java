@@ -15,7 +15,7 @@ public class ArrayExample {
 //			}
 //		}
 		
-		ArrayList list = new ArrayList();
+		ArrayList<Friend> list = new ArrayList<Friend>();
 		list.add(new Friend("홍길동", "010-1111-1111"));
 		list.add(new Friend("김길동", "010-2222-2222"));
 		list.remove(0);
