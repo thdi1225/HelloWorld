@@ -2,6 +2,7 @@ package co.edu.board;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class BoardExe {
 	public static void main(String[] args) {
