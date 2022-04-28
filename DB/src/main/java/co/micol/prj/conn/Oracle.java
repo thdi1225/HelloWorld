@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import co.micol.prj.vo.UserVO;
+
 public class Oracle {
 	Connection con; // 멤버변수
 	Statement stmt;
@@ -13,8 +15,8 @@ public class Oracle {
 
 	public void getConnection() {
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String userid =  "hr"; //c##추가
-		String pwd = "hr"; //c##추가
+		String userid =  "test"; //c##추가
+		String pwd = "test"; //c##추가
 	   
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -32,8 +34,21 @@ public class Oracle {
 		}
 	}
 	
-	public void printCustomer(){ 
-		String query = "SELECT * FROM employees where last_name = 'King'";
+	public void getDisConnection() {
+		try {
+			con.close();
+			stmt.close();
+			rs.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public boolean login(UserVO vo) {
+		boolean isLogin = false;
+		String query = "SELECT * FROM MEMBER";
+
 		try {
 			stmt = con.createStatement(); //2
 			rs = stmt.executeQuery(query); //3
@@ -47,5 +62,11 @@ public class Oracle {
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}
+		return isLogin;
+	}
+
+	public void userInsert(UserVO vo) {
+		// TODO Auto-generated method stub
+		
 	}
 }
