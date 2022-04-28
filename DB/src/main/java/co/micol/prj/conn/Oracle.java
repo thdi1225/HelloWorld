@@ -66,7 +66,20 @@ public class Oracle {
 	}
 
 	public void userInsert(UserVO vo) {
-		// TODO Auto-generated method stub
+		String query = "INSERT INTO MEMBER VALUES()";
+
+		try {
+			stmt = con.createStatement(); //2
+			rs = stmt.executeQuery(query); //3
+			
+			while (rs.next()){				
+				System.out.println(rs.getInt(1));
+				System.out.println(rs.getString(2));
+			}
 		
+			con.close();
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }

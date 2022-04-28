@@ -67,7 +67,7 @@ public class UserController {
 					System.out.print("이메일");
 					email = scn.nextLine();
 					
-					UserVO vo = new UserVO(id, password, name, phone, address, email);
+					UserVO vo = new UserVO(id, password, name, phone, address, email, 1);
 					
 					oracle.userInsert(vo);
 				}else if(subMenu == 2) {
@@ -84,6 +84,9 @@ public class UserController {
 					System.out.print("이메일");
 					email = scn.nextLine();
 					
+					UserVO vo = new UserVO(id, password, name, phone, address, email, 2);
+					
+					oracle.userInsert(vo);
 				}
 			}else if(menu == 3){
 				
