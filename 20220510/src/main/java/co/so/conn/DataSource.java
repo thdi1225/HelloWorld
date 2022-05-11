@@ -1,4 +1,4 @@
-package co.micol.prj.student.dao;
+package co.so.conn;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -41,7 +41,6 @@ public class DataSource {
 			url = properties.getProperty("url");
 			user = properties.getProperty("user");
 			password = properties.getProperty("password");
-			System.out.println(driver + url + user + password);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
